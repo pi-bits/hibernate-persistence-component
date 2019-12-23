@@ -9,27 +9,31 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>hibernate-persistence-component</name>
-    <description>A simple hibernate-persistence-component.</description>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <description>A simple hibernate-persistence-component</description>
+    <url>http://www.serviceinfotech.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <cucumber.version>5.0.0-RC4</cucumber.version>
+        <cucumber-expressions.version>8.3.0</cucumber-expressions.version>
+        <gherkin.version>9.0.0</gherkin.version>
+        <hibernate-core.version>5.0.0.Final</hibernate-core.version>
+        <junit.version>4.13-rc-2</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13-rc-2</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.0.0.Final</version>
+            <version>${hibernate-core.version}</version>
         </dependency>
 
         <dependency>
@@ -40,30 +44,32 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>gherkin</artifactId>
-            <version>9.0.0</version>
+            <version>${gherkin.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.0.0-RC4</version>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>5.0.0-RC4</version>
+            <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
-            <version>5.0.0-RC4</version>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-expressions</artifactId>
-            <version>8.3.0</version>
+            <version>${cucumber-expressions.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
