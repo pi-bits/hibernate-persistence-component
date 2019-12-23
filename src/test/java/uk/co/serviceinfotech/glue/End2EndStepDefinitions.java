@@ -10,7 +10,6 @@ public class End2EndStepDefinitions {
 
     private final static Logger LOGGER = Logger.getLogger(End2EndStepDefinitions.class.getName());
 
-
     @Given("I have {word} id")
     public void iHaveId(String type) {
         System.out.println(type);
@@ -27,7 +26,7 @@ public class End2EndStepDefinitions {
     }
 
     @Given("I have the status as {word}")
-    public void iHaveTheStatusAsIN_PROGRESS(String status) {
+    public void assertStatus(String status) {
     }
 
 
