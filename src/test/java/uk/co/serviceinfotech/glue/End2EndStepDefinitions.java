@@ -12,7 +12,6 @@ public class End2EndStepDefinitions {
 
     @Given("I have {word} id")
     public void iHaveId(String type) {
-        System.out.println(type);
     }
 
     @Given("I have task description as {word}")
