@@ -25,3 +25,13 @@ Ability: As a user I want to save or update or get test scenarios
    When I get scenario data
    And I should see 'status' as READY
    And I should see 'task description' as COMPLETION
+
+@cofeeshop
+  Scenario: An international coffee shop must handle currencies
+    Given the price list for an international coffee shop
+      | product | currency | price |
+      | coffee  | EUR      | 1     |
+      | donut   | SEK      | 18    |
+    When I buy 1 coffee
+    And I buy 1 donut
+    Then should I pay 1 EUR and 18 SEK

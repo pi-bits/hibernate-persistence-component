@@ -1,6 +1,9 @@
 package uk.co.serviceinfotech.glue;
 
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -26,8 +29,22 @@ public class End2EndStepDefinitions {
     private ScenarioData scenarioData;
     private IScenarioDao scenarioDao;
 
+
+    @BeforeStep
+    public void beforeStep(Scenario scenario) {
+
+
+    }
+
+
+    @AfterStep
+    public void afterStep(Scenario scenario) {
+    }
+
+
     @Before
-    public void setUpData() {
+    public void setUpData(Scenario scenario) {
+
         scenarioData = new ScenarioData();
         scenarioDao = new ScenarioDao();
 

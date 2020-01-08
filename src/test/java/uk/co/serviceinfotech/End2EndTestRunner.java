@@ -13,6 +13,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType;
         strict = true,
         features = "src/test/resources/features/",
         snippets = SnippetType.CAMELCASE,
-        stepNotifications = true)
+        stepNotifications = true,
+        tags = "@cofeeshop")
 public class End2EndTestRunner {
 }
