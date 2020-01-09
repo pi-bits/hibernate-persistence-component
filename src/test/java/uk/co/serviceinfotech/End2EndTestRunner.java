@@ -15,5 +15,6 @@ import static io.cucumber.junit.CucumberOptions.SnippetType;
         snippets = SnippetType.CAMELCASE,
         stepNotifications = true,
         tags = "@cofeeshop")
+
 public class End2EndTestRunner {
 }

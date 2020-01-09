@@ -32,6 +32,7 @@ Ability: As a user I want to save or update or get test scenarios
       | product | currency | price |
       | coffee  | EUR      | 1     |
       | donut   | SEK      | 18    |
+    And I have a red ball
     When I buy 1 coffee
     And I buy 1 donut
     Then should I pay 1 EUR and 18 SEK
