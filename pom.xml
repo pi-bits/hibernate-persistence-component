@@ -21,7 +21,7 @@
         <cucumber-data-table.version>3.1.0</cucumber-data-table.version>
         <gherkin.version>9.0.0</gherkin.version>
         <hibernate-core.version>5.0.0.Final</hibernate-core.version>
-        <junit.version>4.13-rc-2</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
