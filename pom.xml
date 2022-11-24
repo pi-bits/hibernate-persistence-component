@@ -20,7 +20,7 @@
         <cucumber-expressions.version>8.3.0</cucumber-expressions.version>
         <cucumber-data-table.version>3.1.0</cucumber-data-table.version>
         <gherkin.version>9.0.0</gherkin.version>
-        <hibernate-core.version>5.0.0.Final</hibernate-core.version>
+        <hibernate-core.version>5.3.20.Final</hibernate-core.version>
         <junit.version>4.13-rc-2</junit.version>
     </properties>
 
